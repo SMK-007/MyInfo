@@ -1,38 +1,9 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 header {
-    text-align: center;
-    background: #0078d7;
-    color: white;
-    padding: 2rem 0;
-}
-header .highlight {
-    color: #ffd700;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background: #333;
-    padding: 1rem;
-}
-nav ul li {
-    margin: 0 1rem;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
     color: white;
 }
     

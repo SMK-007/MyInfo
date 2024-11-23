@@ -5,30 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mohan Kumar Sampangi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, I’m <span class="highlight">Mohan Kumar Sampangi</span></h1>
-        <p>Engineer | Innovator | Gamer</p>
+    <header class="bg-dark text-white text-center py-5">
+        <h1 class="display-4">Mohan Kumar Sampangi</h1>
+        <p class="lead">Engineer | Innovator | Gamer</p>
+        <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
-        <section id="intro">
-            <p>Welcome to my portfolio website. Explore my skills, projects, and experience.</p>
+        <section id="about" class="container py-5">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I am an innovative engineer with over 2 years of experience in Unity and software development.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img src="assets/images/about.jpg" class="img-fluid rounded" alt="About Me">
+                </div>
+                <div class="col-md-6">
+                    <p>Certified as a Full Stack .NET Developer, I have honed my skills in Unity, C#, and Python. I am passionate about creating solutions for complex challenges.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Skills</h2>
+                <div class="row text-center mt-4">
+                    <div class="col-md-3">
+                        <img src="assets/images/csharp.png" class="img-fluid mb-2" alt="C#">
+                        <p>C#</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/python.png" class="img-fluid mb-2" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/unity.png" class="img-fluid mb-2" alt="Unity">
+                        <p>Unity</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/sql.png" class="img-fluid mb-2" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Projects</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="assets/images/vizad.png" class="card-img-top" alt="VizAD">
+                            <div class="card-body">
+                                <h5 class="card-title">VizAD</h5>
+                                <p class="card-text">Developed and maintained an internal Vehicle HMI tool using Unity and C#.</p>
+                                <a href="#" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="bg-dark text-white py-5">
+            <div class="container text-center">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out!</p>
+                <form class="mt-4" action="https://formspree.io/f/{your_form_id}" method="POST">
+                    <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                    <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                    <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Mohan Kumar Sampangi</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
     
